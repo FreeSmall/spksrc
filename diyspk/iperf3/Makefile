@@ -14,5 +14,6 @@ HOMEPAGE = https://iperf.fr/
 LICENSE = 3-clause BSD
 
 SPK_COMMANDS = bin/iperf3
+SSS_SCRIPT = src/dsm-control.sh
 
 include ../../mk/spksrc.spk.mk
