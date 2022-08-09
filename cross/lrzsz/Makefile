@@ -14,6 +14,5 @@ COMMENT  = free x/y/zmodem implementation
 LICENSE  = 
 
 GNU_CONFIGURE = 1
-PRE_PATCH_TARGET = nop
 
 include ../../mk/spksrc.cross-cc.mk

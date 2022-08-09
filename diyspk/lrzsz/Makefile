@@ -13,6 +13,13 @@ STARTABLE = no
 HOMEPAGE = https://ohse.de/uwe/software/lrzsz.html
 LICENSE = GNU
 
-SPK_COMMANDS = bin/lrz bin/lsz
+SPK_COMMANDS = bin/rz bin/sz
+POST_STRIP_TARGET = lrzsz_install
 
 include ../../mk/spksrc.spk.mk
+
+.PHONY: lrzsz_install
+lrzsz_install:
+	install -m 755 -d $(STAGING_DIR)/bin/
+	cd $(STAGING_DIR)/bin && ln -s lrz rz
+	cd $(STAGING_DIR)/bin && ln -s lsz sz
