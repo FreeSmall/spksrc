@@ -5,3 +5,6 @@ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py -O - | python2
 pip2 install wheel httpie
 wget https://bootstrap.pypa.io/get-pip.py -O - | python3
 pip3 install meson==0.56.0
+
+Note:
+  sudo chmod 600 ~/.google_authenticator
